@@ -6,7 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
 
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
@@ -18,7 +23,7 @@
   </head>
   <body id="home">
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm fixed-top" id="navbar">
       <div class="container">
         <a class="navbar-brand" href="#">Sandhika Galih</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -45,11 +50,12 @@
     <!-- Akhir Navbar -->
 
     <!-- Jumbotron -->
-    <section class="jumbotron text-center">
+    <section class="jumbotron text-center" id="welcome-section">
       <img src="img/sandhika.jpg" alt="Sandhika Galih" width="200" class="rounded-circle img-thumbnail" />
       <h1 class="display-4">Sandhika Galih</h1>
       <p class="lead">Lecturer | Content Creator</p>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <a href="https://github.com/sandhikagalih" target="_blank" class="btn btn-dark btn-github" id="profile-link">Follow my GitHub <i class="bi bi-github"></i></a>
+      <svg class="wave1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
           fill="#ffffff"
           fill-opacity="10"
@@ -96,39 +102,47 @@
         </div>
         <div class="row justify-content-center">
           <div class="col-md-4 mb-3">
-            <div class="card">
-              <img src="img/projects/1.jpg" class="card-img-top" alt="Project 1" />
+            <div class="card project-tile">
+              <img src="img/projects/twice.png" class="card-img-top" alt="Project 1" />
               <div class="card-body">
+                <h5 class="card-title">Twice Tribute Page</h5>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="https://sandhikagalih.github.io/twice-tribute-page/" target="_blank" class="btn btn-primary">Detail Project &raquo;</a>
               </div>
             </div>
           </div>
           <div class="col-md-4 mb-3">
-            <div class="card">
-              <img src="img/projects/2.jpg" class="card-img-top" alt="Project 2" />
+            <div class="card project-tile">
+              <img src="img/projects/twice-survey.png" class="card-img-top" alt="Project 2" />
               <div class="card-body">
+                <h5 class="card-title">Twice Survey Form</h5>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="https://sandhikagalih.github.io/twice-survey-form/" target="_blank" class="btn btn-primary">Detail Project &raquo;</a>
               </div>
             </div>
           </div>
           <div class="col-md-4 mb-3">
-            <div class="card">
-              <img src="img/projects/3.jpg" class="card-img-top" alt="Project 3" />
+            <div class="card project-tile">
+              <img src="img/projects/tech-docs.png" class="card-img-top" alt="Project 3" />
               <div class="card-body">
+                <h5 class="card-title">Technical Documentation</h5>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="https://sandhikagalih.github.io/fcc-technical-documentation" target="_blank" class="btn btn-primary">Detail Project &raquo;</a>
               </div>
             </div>
           </div>
           <div class="col-md-4 mb-3">
-            <div class="card">
-              <img src="img/projects/4.jpg" class="card-img-top" alt="Project 4" />
+            <div class="card project-tile">
+              <img src="img/projects/landing-page.png" class="card-img-top" alt="Project 4" />
               <div class="card-body">
+                <h5 class="card-title">Landing Page</h5>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="https://sandhikagalih.github.io/landing-page-css-grid/" target="_blank" class="btn btn-primary">Detail Project &raquo;</a>
               </div>
             </div>
           </div>
           <div class="col-md-4 mb-3">
-            <div class="card">
+            <div class="card project-tile">
               <img src="img/projects/5.jpg" class="card-img-top" alt="Project 5" />
               <div class="card-body">
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -201,7 +215,11 @@
     </footer>
     <!-- Akhir Footer -->
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+      crossorigin="anonymous"
+    ></script>
 
     <script>
       const scriptURL = 'https://script.google.com/macros/s/AKfycbzjWwvjJihKz3-24SxEnHM5XFjNPgQd_dv3uD_fgjLSp_4AAXsC6IC4C_ECvWyLkGsuBg/exec';
@@ -230,5 +248,6 @@
           .catch((error) => console.error('Error!', error.message));
       });
     </script>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
   </body>
 </html>
